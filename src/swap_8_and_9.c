@@ -39,8 +39,8 @@ static struct PyModuleDef swap_8_and_9_definition = {
 PyMODINIT_FUNC PyInit_swap_8_and_9(void) {
     Py_Initialize();
 
-    PyLongObject* obj3 = (PyLongObject*)PyLong_FromLong(8);
-    PyLongObject* obj4 = (PyLongObject*)PyLong_FromLong(9);
+    PyLongObject* obj8 = (PyLongObject*)PyLong_FromLong(8);
+    PyLongObject* obj9 = (PyLongObject*)PyLong_FromLong(9);
 
     obj8->ob_digit[0] = 9;
     obj9->ob_digit[0] = 8;
